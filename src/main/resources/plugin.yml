@@ -1,0 +1,19 @@
+name: HandyPlugin
+main: cn.handyplus.plugin.HandyPlugin
+version: 1.0.0
+author: handy
+api-version: 1.13
+website: https://gitee.com/handy-git/HandyLib
+description: 基于HandyLib开发插件模版
+commands:
+  handyPlugin:
+    description: 基于HandyLib开发插件模版
+    aliases: [ hp ]
+permissions:
+  handyPlugin.*:
+    description: 基于HandyLib开发插件模版
+    children:
+      handyPlugin.reload: true
+  handyPlugin.reload:
+    description: 重新加载配置
+    default: op
