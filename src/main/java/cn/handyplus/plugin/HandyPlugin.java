@@ -1,7 +1,7 @@
 package cn.handyplus.plugin;
 
 import cn.handyplus.lib.InitApi;
-import cn.handyplus.lib.util.SqlManagerUtil;
+import cn.handyplus.lib.db.SqlManagerUtil;
 import cn.handyplus.plugin.util.ConfigUtil;
 import org.bukkit.plugin.java.JavaPlugin;
 

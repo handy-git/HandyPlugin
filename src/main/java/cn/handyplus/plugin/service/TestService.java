@@ -6,6 +6,7 @@ import cn.handyplus.lib.db.enter.Page;
 import cn.handyplus.plugin.enter.Test;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * test测试
@@ -42,7 +43,7 @@ public class TestService {
      * @param name 姓名
      * @return Test
      */
-    public Test selectOne(String name) {
+    public Optional<Test> selectOne(String name) {
         Db<Test> db = Db.use(Test.class);
         db.where().eq(StrUtil.isNotEmpty(name), Test::getName, name);
         return db.execution().selectOne();
@@ -93,8 +94,8 @@ public class TestService {
     /**
      * 根据id增加age
      *
-     * @param id   id
-     * @param name 姓名
+     * @param id     id
+     * @param number 数量
      * @return true/成功
      */
     public boolean addAgeById(Integer id, Integer number) {
