@@ -10,6 +10,5 @@ public class PluginConstants {
     /**
      * 检查更新网址
      */
-    public final static String PLUGIN_VERSION_URL = "https://gitee.com/api/v5/repos/handy-git/HandyLib/releases/latest";
-
+    public final static String PLUGIN_VERSION_URL = "https://api.github.com/repos/handy-git/HandyPlugin/releases/latest";
 }
